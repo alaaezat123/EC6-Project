@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.back {
+    background:url(images/top-view-delicious-ice-creams-with-copy-space.jpg)center center / cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #000;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #07a4ff;
+}
+
+.content-wrapper {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width:100%;
+    max-width: 600px;
+    background: rgba(128, 118, 118, 0.226); 
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+   
+}
+
+.icon {
+    display: none; 
+}
+
+.items {
+    padding: 15px; 
+    color: #f1eaea;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+    border-radius: 33px;
+    font-size: larger;
+}
+
+.items.hidden {
+    display: none;
+}
+
+.container:hover {
+    background-color: rgba(118, 140, 168, 0.493); 
+    box-shadow: 0 6px 12px rgba(7, 47, 223, 0.897); 
+}
+/* About Start */
+#about {
+  padding: 4rem 0;
+  background: #f4f4f4;
+}
+
+#about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#about .about-content div {
+  flex: 1 1 100%;
+  margin-bottom: 2rem;
+}
+
+#about .about-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+  margin-bottom: 2rem;
+}
+
+#about .about-content a {
+  margin-top: 2rem;
+}
+/*****************************************/
+
+
+
+
+
+
+
+
+
+
+
+/* Offers Section start */
+#offers {
+  padding: 4rem 0;
+  background-color: #81a16c;
+}
+
+#offers .offers-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#offers .offers-items div {
+  flex: 1 1 300px;
+  margin: 1rem;
+  text-align: center;
+}
+
+#offers .offers-items img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+/* Offers Section end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Gallery section start */
+#gallery {
+  padding: 8rem 0;
+  background: url(images/ice-cream-stick-cones.jpg) center center/cover;
+}
+
+#gallery .img-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#gallery .img-gallery img {
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+
+#gallery .img-gallery img:hover {
+  opacity: 1;
+  transform: scale(1.1, 1.1);
+}
+
+/* Gallery section end */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Section start */
+#contact {
+  padding: 5rem 0;
+  background: #85a4a8d0;
+}
+
+#contact .contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact .contact-info,
+form {
+  flex: 1 1 45%;
+  margin-bottom: 2rem;
+}
+
+form input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 20px 15px;
+  margin: 20px 0;
+  border-radius: 13px;
+  background-color: #ffffff;
+}
+
+form button {
+  color: #fff;
+}
+
+/* Contact Section End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Start */
+#footer {
+  background-color: #050505;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 14px;
+}
+/* Footer End */
+
+/* Responsiveness */
+@media (max-width: 1000px) {
+  header .content h1 {
+    font-size: 28px;
+  }
+
+  #about {
+    padding: 2rem;
+  }
+
+  #offers .offers-items img {
+    width: 150px;
+  }
+
+  #contact .contact-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  header .content h1 {
+    font-size: 18px;
+  }
+
+  header .content p {
+    font-size: 14px;
+  }
+
+  #about .about-content div {
+    margin-bottom: 1rem;
+  }
+
+  #offers {
+    padding: 2rem;
+  }
+}
+
+
+
+/* Styles for the slider */
+.slider-container {
+  position: relative;
+  width: 100%;  /* عرض السلايدر ليغطي كامل العرض */
+  max-width: 100%;  /* لا نريد أن يتجاوز السلايدر عرض الشاشة */
+  height: auto;  /* تغيير الارتفاع ليكون مرنًا */
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 40px 0;  /* فاصل بين السلايدر والعناصر الأخرى */
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 70%; /* كل شريحة تشغل عرض الشاشة بالكامل */
+  height: auto; /* تحديد الارتفاع ليكون مرنًا */
+  display: none;  
+}
+
+.slide.active {
+  display: block; 
+}
+
+.slide img {
+  width: 100%;  
+  height: auto;  
+  object-fit: contain; 
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.slide img:hover {
+  transform: scale(1.05);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+#prev {
+  left: 10px;
+}
+
+#next {
+  right: 10px;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
